@@ -1,0 +1,156 @@
+html {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #141b1c;
+}
+
+h2,
+p,
+span,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.tariffs {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.tariff {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  padding: 33px 0px 1px;
+  margin-right: 18px;
+  background-color: #334247;
+  color: #ffffff;
+  overflow: hidden;
+}
+.tariff--business {
+  position: relative;
+}
+.tariff--business::after {
+  content: "popular";
+  position: absolute;
+  width: 150px;
+  height: 25px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  text-transform: uppercase;
+  background-color: #dc3f45;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  right: -8%;
+  top: 4%;
+}
+.tariff__title {
+  font-size: 35px;
+  line-height: 1.22;
+  font-weight: 700px;
+  text-align: center;
+}
+.tariff__subtitle {
+  display: block;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+.tariff__description {
+  width: 328px;
+  margin: 40px auto;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.price {
+  padding: 19px 0;
+  margin-top: 33px;
+}
+.price--basic {
+  background-color: #5bb189;
+}
+.price--business {
+  background-color: #3a6ba5;
+}
+.price--webshop {
+  background-color: #ec632a;
+}
+.price-tag {
+  display: block;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1.21;
+  text-align: center;
+}
+
+.terms {
+  padding: 0 0;
+}
+.terms__item {
+  position: relative;
+  padding: 16px 0px 16px 59px;
+}
+.terms__item:nth-child(odd) {
+  background-color: #2a3438;
+}
+.terms__item--basic::before {
+  content: " ";
+  position: absolute;
+  left: 22px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png");
+  width: 15px;
+  height: 13px;
+}
+.terms__item--business::before {
+  content: " ";
+  position: absolute;
+  left: 22px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png");
+  width: 15px;
+  height: 13px;
+}
+.terms__item--webshop::before {
+  content: " ";
+  position: absolute;
+  left: 22px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png");
+  width: 15px;
+  height: 13px;
+}
+
+.order {
+  width: 100;
+  padding: 11px 27px 12px 28px;
+  color: inherit;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin: 39px auto 40px;
+}
+.order--basic {
+  background-color: #5bb189;
+}
+.order--business {
+  background-color: #3a6ba5;
+}
+.order--webshop {
+  background-color: #ec632a;
+}
+
+/*# sourceMappingURL=styles.css.map */
