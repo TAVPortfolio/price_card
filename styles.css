@@ -4,7 +4,9 @@ html {
 }
 
 body {
+  display: flex;
   background-color: #141b1c;
+  min-height: 100vh;
 }
 
 h2,
@@ -21,9 +23,8 @@ ul {
 }
 
 .tariffs {
-  margin-top: 115px;
   display: flex;
-  justify-content: center;
+  margin: auto;
 }
 
 .price-card {
@@ -106,6 +107,9 @@ ul {
 .price-card__options-item {
   position: relative;
   padding: 16px 0px 16px 59px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.2;
 }
 .price-card__options-item:nth-child(odd) {
   background-color: #2a3438;
@@ -135,7 +139,6 @@ ul {
   height: 13px;
 }
 .price-card__order-btn {
-  width: 100;
   padding: 11px 27px 12px 28px;
   color: inherit;
   border-radius: 20px;

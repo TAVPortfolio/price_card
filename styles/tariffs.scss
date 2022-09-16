@@ -1,7 +1,6 @@
 .tariffs {
-  margin-top: 115px;
   display: flex;
-  justify-content: center;
+  margin: auto;
 }
 
 .price-card {
@@ -84,6 +83,9 @@
     &-item {
       position: relative;
       padding: 16px 0px 16px 59px;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.2;
       &:nth-child(odd) {
         background-color: $dark-background;
       }
@@ -120,14 +122,12 @@
     }
   }
   &__order-btn {
-    width: 100;
     padding: 11px 27px 12px 28px;
     color: inherit;
     border-radius: 20px;
     border: none;
     cursor: pointer;
     margin: 39px auto 40px;
-
     &--basic {
       background-color: $basic-color;
     }

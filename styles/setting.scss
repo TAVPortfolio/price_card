@@ -4,7 +4,9 @@ html {
 }
 
 body {
+  display: flex;
   background-color: $section-background;
+  min-height: 100vh;
 }
 
 h2,
