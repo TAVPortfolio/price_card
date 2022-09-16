@@ -21,12 +21,12 @@ ul {
 }
 
 .tariffs {
-  margin-top: 50px;
+  margin-top: 115px;
   display: flex;
   justify-content: center;
 }
 
-.tariff {
+.price-card {
   display: flex;
   flex-direction: column;
   width: 380px;
@@ -36,10 +36,13 @@ ul {
   color: #ffffff;
   overflow: hidden;
 }
-.tariff--business {
+.price-card:last-child {
+  margin: 0;
+}
+.price-card--business {
   position: relative;
 }
-.tariff--business::after {
+.price-card--business::after {
   content: "popular";
   position: absolute;
   width: 150px;
@@ -57,19 +60,19 @@ ul {
   right: -8%;
   top: 4%;
 }
-.tariff__title {
+.price-card__title {
   font-size: 35px;
   line-height: 1.22;
   font-weight: 700px;
   text-align: center;
 }
-.tariff__subtitle {
+.price-card__subtitle {
   display: block;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
 }
-.tariff__description {
+.price-card__description {
   width: 328px;
   margin: 40px auto;
   font-weight: 300;
@@ -77,39 +80,37 @@ ul {
   line-height: 1.2;
   text-align: center;
 }
-
-.price {
+.price-card__price {
   padding: 19px 0;
   margin-top: 33px;
 }
-.price--basic {
+.price-card__price--basic {
   background-color: #5bb189;
 }
-.price--business {
+.price-card__price--business {
   background-color: #3a6ba5;
 }
-.price--webshop {
+.price-card__price--webshop {
   background-color: #ec632a;
 }
-.price-tag {
+.price-card__price-tag {
   display: block;
   font-weight: 700;
   font-size: 55px;
   line-height: 1.21;
   text-align: center;
 }
-
-.terms {
+.price-card__options-list {
   padding: 0 0;
 }
-.terms__item {
+.price-card__options-item {
   position: relative;
   padding: 16px 0px 16px 59px;
 }
-.terms__item:nth-child(odd) {
+.price-card__options-item:nth-child(odd) {
   background-color: #2a3438;
 }
-.terms__item--basic::before {
+.price-card__options-item--basic::before {
   content: " ";
   position: absolute;
   left: 22px;
@@ -117,7 +118,7 @@ ul {
   width: 15px;
   height: 13px;
 }
-.terms__item--business::before {
+.price-card__options-item--business::before {
   content: " ";
   position: absolute;
   left: 22px;
@@ -125,7 +126,7 @@ ul {
   width: 15px;
   height: 13px;
 }
-.terms__item--webshop::before {
+.price-card__options-item--webshop::before {
   content: " ";
   position: absolute;
   left: 22px;
@@ -133,8 +134,7 @@ ul {
   width: 15px;
   height: 13px;
 }
-
-.order {
+.price-card__order-btn {
   width: 100;
   padding: 11px 27px 12px 28px;
   color: inherit;
@@ -143,13 +143,13 @@ ul {
   cursor: pointer;
   margin: 39px auto 40px;
 }
-.order--basic {
+.price-card__order-btn--basic {
   background-color: #5bb189;
 }
-.order--business {
+.price-card__order-btn--business {
   background-color: #3a6ba5;
 }
-.order--webshop {
+.price-card__order-btn--webshop {
   background-color: #ec632a;
 }
 

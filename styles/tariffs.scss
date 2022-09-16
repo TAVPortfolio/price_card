@@ -1,10 +1,10 @@
 .tariffs {
-  margin-top: 50px;
+  margin-top: 115px;
   display: flex;
   justify-content: center;
 }
 
-.tariff {
+.price-card {
   display: flex;
   flex-direction: column;
   width: 380px;
@@ -13,6 +13,9 @@
   background-color: $light-background;
   color: $text-color;
   overflow: hidden;
+  &:last-child {
+    margin: 0;
+  }
   &--business {
     position: relative;
     &::after {
@@ -54,86 +57,85 @@
     line-height: 1.2;
     text-align: center;
   }
-}
-
-.price {
-  padding: 19px 0;
-  margin-top: 33px;
-  &--basic {
-    background-color: $basic-color;
-  }
-  &--business {
-    background-color: $business-color;
-  }
-  &--webshop {
-    background-color: $webshop-color;
-  }
-  &-tag {
-    display: block;
-    font-weight: 700;
-    font-size: 55px;
-    line-height: 1.21;
-    text-align: center;
-  }
-}
-
-.terms {
-  padding: 0 0;
-  &__item {
-    position: relative;
-    padding: 16px 0px 16px 59px;
-    &:nth-child(odd) {
-      background-color: $dark-background;
-    }
+  &__price {
+    padding: 19px 0;
+    margin-top: 33px;
     &--basic {
-      &::before {
-        content: ' ';
-        position: absolute;
-        left: 22px;
-        background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png');
-        width: 15px;
-        height: 13px;
-      }
+      background-color: $basic-color;
     }
     &--business {
-      &::before {
-        content: ' ';
-        position: absolute;
-        left: 22px;
-        background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
-        width: 15px;
-        height: 13px;
-      }
+      background-color: $business-color;
     }
     &--webshop {
-      &::before {
-        content: ' ';
-        position: absolute;
-        left: 22px;
-        background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png');
-        width: 15px;
-        height: 13px;
+      background-color: $webshop-color;
+    }
+    &-tag {
+      display: block;
+      font-weight: 700;
+      font-size: 55px;
+      line-height: 1.21;
+      text-align: center;
+    }
+  }
+  &__options {
+    &-list {
+      padding: 0 0;
+    }
+    &-item {
+      position: relative;
+      padding: 16px 0px 16px 59px;
+      &:nth-child(odd) {
+        background-color: $dark-background;
+      }
+      &--basic {
+        &::before {
+          content: ' ';
+          position: absolute;
+          left: 22px;
+          background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png');
+          width: 15px;
+          height: 13px;
+        }
+      }
+      &--business {
+        &::before {
+          content: ' ';
+          position: absolute;
+          left: 22px;
+          background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
+          width: 15px;
+          height: 13px;
+        }
+      }
+      &--webshop {
+        &::before {
+          content: ' ';
+          position: absolute;
+          left: 22px;
+          background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png');
+          width: 15px;
+          height: 13px;
+        }
       }
     }
   }
-}
+  &__order-btn {
+    width: 100;
+    padding: 11px 27px 12px 28px;
+    color: inherit;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 39px auto 40px;
 
-.order {
-  width: 100;
-  padding: 11px 27px 12px 28px;
-  color: inherit;
-  border-radius: 20px;
-  border: none;
-  cursor: pointer;
-  margin: 39px auto 40px;
-
-  &--basic {
-    background-color: $basic-color;
-  }
-  &--business {
-    background-color: $business-color;
-  }
-  &--webshop {
-    background-color: $webshop-color;
+    &--basic {
+      background-color: $basic-color;
+    }
+    &--business {
+      background-color: $business-color;
+    }
+    &--webshop {
+      background-color: $webshop-color;
+    }
   }
 }
