@@ -1,6 +1,6 @@
 # Layout Price card
 
-![promo image](https://miro.medium.com/max/700/0*ObRGOEHROByZZexH)
+![promo image](https://mktoolboxsuite.com/wp-content/uploads/2018/08/price-table-runel-1024x711.png)
 
 ## **Description**
 
